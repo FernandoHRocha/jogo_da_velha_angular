@@ -1,4 +1,3 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -64,6 +63,15 @@ export class JogoDaVelhaService {
    */
   get showTabuleiro(): boolean{
     return this._showTabuleiro;
+  }
+
+  /**
+   * Retorna se a tela de fim de jogo deve ser exibida.
+   * 
+   * @return boolean
+   */
+  get showfinal(): boolean{
+    return this._showFinal;
   }
 
   /**
