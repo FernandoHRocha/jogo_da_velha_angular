@@ -105,7 +105,7 @@ export class JogoDaVelhaService {
       return;
     }
 
-    this.tabuleiro[posX][posY] !== this._jogador;
+    this.tabuleiro[posX][posY] = this._jogador;
     this.numMovimentos++;
     this.vitoria = this.fimJogo(posX, posY, this.tabuleiro, this._jogador);
     this._jogador = (this._jogador === this.X) ? this.O : this.X;
