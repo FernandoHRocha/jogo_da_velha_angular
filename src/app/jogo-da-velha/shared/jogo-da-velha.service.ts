@@ -123,6 +123,7 @@ export class JogoDaVelhaService {
       this._showFinal = true
     }
   }
+  
   /**
    * Verifica e retorna se o jogo terminou.
    *
